@@ -24,15 +24,20 @@ aluno2.entregarAtividade();
 console.log(`\n Classe Livro:`);
 
 livro1.ler();
-livro2.ler();   
+livro2.ler();
 
 livro1.exibirDetalhes();
 livro2.exibirDetalhes();
 
 console.log(`\n Classe Carro:`);
 
-carro1.ligar();
-carro2.ligar();
+let ligado1: boolean = carro1.ligar();
+let ligado2: boolean = carro2.ligar();
 
-carro1.acelerar(80);
-carro2.acelerar(100);
+if (ligado1) {
+    carro1.acelerar(80);
+}
+
+if (ligado2) {
+    carro2.acelerar(100);
+}

@@ -10,6 +10,26 @@ class Carro {
         this.ano = _ano;
         this.cor = _cor;
     }
+    public getModelo(): string {
+        return this.modelo;
+    }
+    public setModelo(_modelo: string): void {
+        this.modelo = _modelo;
+    }
+
+    public getAno(): number {
+        return this.ano;
+    }
+    public setAno(_ano: number) {
+        this.ano = _ano;
+    }
+
+    public getCor(): string {
+        return this.cor;
+    }
+    public setCor(_cor: string) {
+        this.cor = _cor;
+    }
 
     // Métodos
     public ligar(): boolean {
@@ -29,3 +49,4 @@ class Carro {
 }
 
 export default Carro;
+

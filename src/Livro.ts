@@ -11,6 +11,30 @@ class Livro {
         this.paginas = _paginas;
     }
 
+    public getTitulo(): string {
+        return this.titulo;
+    }
+
+    public setTitulo(_titulo: string): void {
+        this.titulo = _titulo;
+    }
+
+    public getAutor(): string {
+        return this.autor;
+    }
+
+    public setAutor(_autor: string): void {
+        this.autor = _autor;
+    }
+
+    public getPaginas(): number {
+        return this.paginas;
+    }
+
+    public setPaginas(_paginas: number): void {
+        this.paginas = _paginas;
+    }
+
     // Métodos
     public ler(): void {
         console.log(`Lendo o livro ${this.titulo}.`);
